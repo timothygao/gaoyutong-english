@@ -1,0 +1,373 @@
+{
+  "slug": "unit1-amazing-places",
+  "unit": 1,
+  "title": "Amazing places",
+  "chapter": "Unit 1 · Amazing places",
+  "source": "Unit1 Amazing places 知识清单.docx",
+  "verbs": [
+    {
+      "id": "unit1-amazing-places-verb-1",
+      "base": "walk",
+      "past": "walked",
+      "chinese": "走，走路"
+    },
+    {
+      "id": "unit1-amazing-places-verb-2",
+      "base": "visit",
+      "past": "visited",
+      "chinese": "参观，拜访"
+    },
+    {
+      "id": "unit1-amazing-places-verb-3",
+      "base": "go",
+      "past": "went",
+      "chinese": "去"
+    },
+    {
+      "id": "unit1-amazing-places-verb-4",
+      "base": "climb",
+      "past": "climbed",
+      "chinese": "爬，攀爬"
+    },
+    {
+      "id": "unit1-amazing-places-verb-5",
+      "base": "travel",
+      "past": "travelled",
+      "chinese": "旅行"
+    },
+    {
+      "id": "unit1-amazing-places-verb-6",
+      "base": "eat",
+      "past": "ate",
+      "chinese": "吃"
+    },
+    {
+      "id": "unit1-amazing-places-verb-7",
+      "base": "watch",
+      "past": "watched",
+      "chinese": "观看"
+    },
+    {
+      "id": "unit1-amazing-places-verb-8",
+      "base": "see",
+      "past": "saw",
+      "chinese": "看，看见"
+    },
+    {
+      "id": "unit1-amazing-places-verb-9",
+      "base": "take",
+      "past": "took",
+      "chinese": "做；带走／拍照（按语境）"
+    },
+    {
+      "id": "unit1-amazing-places-verb-10",
+      "base": "is/am",
+      "past": "was",
+      "chinese": "是"
+    },
+    {
+      "id": "unit1-amazing-places-verb-11",
+      "base": "are",
+      "past": "were",
+      "chinese": "是"
+    }
+  ],
+  "reading": [
+    {
+      "id": "unit1-amazing-places-reading-1",
+      "english": "airport",
+      "chinese": "机场"
+    },
+    {
+      "id": "unit1-amazing-places-reading-2",
+      "english": "bamboo",
+      "chinese": "竹子"
+    },
+    {
+      "id": "unit1-amazing-places-reading-3",
+      "english": "village",
+      "chinese": "村庄"
+    },
+    {
+      "id": "unit1-amazing-places-reading-4",
+      "english": "view",
+      "chinese": "景色"
+    },
+    {
+      "id": "unit1-amazing-places-reading-5",
+      "english": "restaurant",
+      "chinese": "餐馆"
+    },
+    {
+      "id": "unit1-amazing-places-reading-6",
+      "english": "clay",
+      "chinese": "黏土，陶土"
+    },
+    {
+      "id": "unit1-amazing-places-reading-7",
+      "english": "thousand",
+      "chinese": "千"
+    },
+    {
+      "id": "unit1-amazing-places-reading-8",
+      "english": "dry",
+      "chinese": "干的"
+    },
+    {
+      "id": "unit1-amazing-places-reading-9",
+      "english": "kilometer",
+      "chinese": "千米"
+    },
+    {
+      "id": "unit1-amazing-places-reading-10",
+      "english": "inspiring",
+      "chinese": "鼓舞人心的"
+    },
+    {
+      "id": "unit1-amazing-places-reading-11",
+      "english": "send",
+      "chinese": "邮寄，发送"
+    },
+    {
+      "id": "unit1-amazing-places-reading-12",
+      "english": "pumpkin",
+      "chinese": "南瓜"
+    },
+    {
+      "id": "unit1-amazing-places-reading-13",
+      "english": "The Red Army",
+      "chinese": "红军"
+    },
+    {
+      "id": "unit1-amazing-places-reading-14",
+      "english": "meet a friend",
+      "chinese": "见一位朋友"
+    },
+    {
+      "id": "unit1-amazing-places-reading-15",
+      "english": "answer a call",
+      "chinese": "接电话"
+    },
+    {
+      "id": "unit1-amazing-places-reading-16",
+      "english": "on the internet",
+      "chinese": "在网上"
+    },
+    {
+      "id": "unit1-amazing-places-reading-17",
+      "english": "walked around",
+      "chinese": "四处走"
+    },
+    {
+      "id": "unit1-amazing-places-reading-18",
+      "english": "watched a show",
+      "chinese": "看节目"
+    },
+    {
+      "id": "unit1-amazing-places-reading-19",
+      "english": "played Chinese chess",
+      "chinese": "下中国象棋"
+    },
+    {
+      "id": "unit1-amazing-places-reading-20",
+      "english": "watched the sunrise",
+      "chinese": "看日出"
+    },
+    {
+      "id": "unit1-amazing-places-reading-21",
+      "english": "a special trip",
+      "chinese": "一次特别的旅行"
+    },
+    {
+      "id": "unit1-amazing-places-reading-22",
+      "english": "took a trip to...",
+      "chinese": "去某地旅行"
+    },
+    {
+      "id": "unit1-amazing-places-reading-23",
+      "english": "saw many beautiful wall paintings",
+      "chinese": "看到许多漂亮的壁画"
+    },
+    {
+      "id": "unit1-amazing-places-reading-24",
+      "english": "took nice photos",
+      "chinese": "拍好看的照片"
+    },
+    {
+      "id": "unit1-amazing-places-reading-25",
+      "english": "told great stories",
+      "chinese": "讲很棒的故事"
+    },
+    {
+      "id": "unit1-amazing-places-reading-26",
+      "english": "learnt a lot",
+      "chinese": "学到很多"
+    },
+    {
+      "id": "unit1-amazing-places-reading-27",
+      "english": "tried delicious pumpkin soup",
+      "chinese": "尝试美味的南瓜汤"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "unit1-amazing-places-sentence-1",
+      "chinese": "你周末过得怎么样？",
+      "english": "How was your weekend?"
+    },
+    {
+      "id": "unit1-amazing-places-sentence-2",
+      "chinese": "非常棒！我去爬长城了。",
+      "english": "It was great! I climbed the Great Wall."
+    },
+    {
+      "id": "unit1-amazing-places-sentence-3",
+      "chinese": "你做什么了，利奥？",
+      "english": "What did you do, Leo?"
+    },
+    {
+      "id": "unit1-amazing-places-sentence-4",
+      "chinese": "我上个星期六去参观“姜饼屋”了。",
+      "english": "I visited the \"Gingerbread House\" last Saturday."
+    },
+    {
+      "id": "unit1-amazing-places-sentence-5",
+      "chinese": "你暑假去哪儿了，斌斌？",
+      "english": "Where did you go over the summer holidays, Binbin?"
+    },
+    {
+      "id": "unit1-amazing-places-sentence-6",
+      "chinese": "我和家人去西安了。",
+      "english": "I went to Xi'an with my family."
+    },
+    {
+      "id": "unit1-amazing-places-sentence-7",
+      "chinese": "你们在那儿做了些什么？",
+      "english": "What did you do there?"
+    },
+    {
+      "id": "unit1-amazing-places-sentence-8",
+      "chinese": "我们去看兵马俑了。",
+      "english": "We went to see the Terracotta Warriors."
+    },
+    {
+      "id": "unit1-amazing-places-sentence-9",
+      "chinese": "你们还做什么了？",
+      "english": "What else did you do?"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "unit1-amazing-places-grammar-1",
+      "prompt": "询问过去情况：___ was your weekend?",
+      "answer": "How",
+      "explain": "课本句型 How was/were + 主语?",
+      "type": "清单句型与语法"
+    },
+    {
+      "id": "unit1-amazing-places-grammar-2",
+      "prompt": "上周末怎么样？It ___ great!",
+      "answer": "was",
+      "explain": "过去状态使用 was/were。",
+      "type": "清单句型与语法"
+    },
+    {
+      "id": "unit1-amazing-places-grammar-3",
+      "prompt": "问过去做了什么：What ___ you do, Leo?",
+      "answer": "did",
+      "explain": "特殊疑问词 + did + 主语 + 动词原形。",
+      "type": "清单句型与语法"
+    },
+    {
+      "id": "unit1-amazing-places-grammar-4",
+      "prompt": "Did you ___ the Great Wall last weekend?",
+      "answer": "climb",
+      "explain": "did 后面要用动词原形。",
+      "type": "清单句型与语法"
+    },
+    {
+      "id": "unit1-amazing-places-grammar-5",
+      "prompt": "I ___ the Great Wall last weekend. (climb)",
+      "answer": "climbed",
+      "explain": "描述过去动作，用动词过去式。",
+      "type": "清单句型与语法"
+    },
+    {
+      "id": "unit1-amazing-places-grammar-6",
+      "prompt": "Where ___ you go over the summer holidays?",
+      "answer": "did",
+      "explain": "询问过去地点用 Where did ... go?",
+      "type": "清单句型与语法"
+    },
+    {
+      "id": "unit1-amazing-places-grammar-7",
+      "prompt": "I ___ to Xi'an with my family. (go)",
+      "answer": "went",
+      "explain": "go 的过去式是 went。",
+      "type": "清单句型与语法"
+    },
+    {
+      "id": "unit1-amazing-places-grammar-8",
+      "prompt": "We ___ to see the Terracotta Warriors. (go)",
+      "answer": "went",
+      "explain": "过去去参观兵马俑，用 went。",
+      "type": "清单句型与语法"
+    },
+    {
+      "id": "unit1-amazing-places-grammar-9",
+      "prompt": "We ___ many beautiful wall paintings. (see)",
+      "answer": "saw",
+      "explain": "see 的过去式 saw。",
+      "type": "清单句型与语法"
+    },
+    {
+      "id": "unit1-amazing-places-grammar-10",
+      "prompt": "She ___ nice photos on her trip. (take)",
+      "answer": "took",
+      "explain": "take 的过去式 took。",
+      "type": "清单句型与语法"
+    },
+    {
+      "id": "unit1-amazing-places-grammar-11",
+      "prompt": "They ___ around the village yesterday. (walk)",
+      "answer": "walked",
+      "explain": "规则动词一般加 -ed。",
+      "type": "清单句型与语法"
+    },
+    {
+      "id": "unit1-amazing-places-grammar-12",
+      "prompt": "We ___ an old restaurant last Saturday. (visit)",
+      "answer": "visited",
+      "explain": "visit 的过去式 visited。",
+      "type": "清单句型与语法"
+    },
+    {
+      "id": "unit1-amazing-places-grammar-13",
+      "prompt": "He ___ at the airport yesterday. (is)",
+      "answer": "was",
+      "explain": "is/am 对应过去式 was。",
+      "type": "语法拓展"
+    },
+    {
+      "id": "unit1-amazing-places-grammar-14",
+      "prompt": "They ___ happy yesterday. (are)",
+      "answer": "were",
+      "explain": "are 对应过去式 were。",
+      "type": "语法拓展"
+    },
+    {
+      "id": "unit1-amazing-places-grammar-15",
+      "prompt": "Please write the past tense of 'stop': ___",
+      "answer": "stopped",
+      "explain": "重读闭音节末尾单辅音的规则示例 stop → stopped（清单原例）。",
+      "type": "语法拓展"
+    }
+  ],
+  "grammarSummary": [
+    "过去情况：How + was / were + 主语？回答用 was/were + 形容词。",
+    "问过去动作：What + did + 主语 + 动词原形？回答用过去式。",
+    "问过去地点：Where + did + 主语 + 动词原形？",
+    "动词过去式一般加 -ed；不发音 e 结尾加 -d；辅音+y 改 i+ed；重读闭音节单辅音需双写再加 -ed，例如 stop→stopped。",
+    "知识清单使用英式拼法 travel→travelled；本卷按清单批改。"
+  ]
+}
