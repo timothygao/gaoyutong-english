@@ -1,10 +1,13 @@
 # 高语桐六年级英语 · 单元试卷与云端记录规则（2026-11）
 
-## 本次来源
-- `Unit1 Amazing places 知识清单.docx`：动词双向默写11组（22道），认读27条（原文件机场重复一次，合并为一次认读），重点句子9句，语法/情境15道。
-- `Unit2 Getting together知识清单.docx`：动词双向默写10组（20道），认读37条，重点句子10句，语法/情境17道。
-- 英语试卷正文和单元题库必须保留来源要求：需听写动词原形/过去式；认读词汇理解中文即可；句子按中文提示默写英语；语法填空与情境依据清单的过去式、Did 问句和活动句型设计，课本原句与扩展语法要区分。
-- Unit1 `travel→travelled` 按清单英式拼法；Unit2 `read→read` 拼写相同，`dress in→dressed in`、`count down→counted down` 都完整考查。
+## 来源与新题型（2026-11-09 更新）
+- 来源资料仍为 `Unit1 Amazing places 知识清单.docx` 与 `Unit2 Getting together知识清单.docx`，源数据 `source-unit1-amazing-places-2026.json` 和 `source-unit2-getting-together-2026.json` 不因变更题型而更改。
+- **家长明确要求的新练习方向：** 所有词汇与词组都只给中文（例如“机场”），由孩子手写或键盘输入完整英文（`airport`）；不再显示英文让孩子选择中文，禁止题干提前泄露目标英文词语。
+- **动词变形一律只给原形，让孩子写过去式**（例如 `clean → ______`）；删除 `cleaned → clean` 之类的反向题，避免同页互相泄露答案。
+- 新版 Unit 1：11道动词过去式、27道中译英词汇词组、9句英语句子默写、15道语法应用，总计**62题**；Unit 2：10道动词过去式、37道中译英词汇词组、10句句子默写、17道语法应用，总计**74题**。
+- Unit 1 `travel → travelled` 按教师清单英式拼法；Unit 2 `read → read` 过去式拼写不变，`dress in → dressed in`、`count down → counted down` 均完整考查。
+- 题目示例中的答案只能在完成本轮全部作答并点击批改之后显示。已批改答案在核对后可再次查看；纸笔模式先确认整轮写完，才可显示答案。
+- **历史保护：** 新的练习分类标识为 `past-only` / `dictation`，保留旧版 `verbs` / `reading` 的本机存储及云端历史记录。原有的 `QUIZ_ID` 和 `STORE` 不改；云端恢复仍兼容旧分类，但不把旧版英文选中文成绩视作新版中文默写英文。
 
 ## 交互与成绩保护
 1. 每单元分别设 `quiz_id=gaoyutong-grade6-english-unit1-amazing-places-2026-v1` 与 `quiz_id=gaoyutong-grade6-english-unit2-getting-together-2026-v1`，本机键分别为 `gao-english-unit1-amazing-places-2026-v1` / `gao-english-unit2-getting-together-2026-v1`，不可覆盖已生成的其他试卷记录。
