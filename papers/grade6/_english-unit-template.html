@@ -46,7 +46,7 @@ button{font:inherit;font-weight:720;border-radius:11px;cursor:pointer;padding:10
  </main>
 <script>const DATA=__DATA__;</script>
 <script type="module">
-import {createClient} from "https://esm.sh/@supabase/supabase-js@2.118.0?bundle";
+import {createClient} from "https://esm.sh/@supabase/supabase-js@2.119.0?bundle";
 const supabase=createClient("https://iqlnwzxmtjjgzisufljd.supabase.co","sb_publishable_jnY3xbWPgPFBd6naW35bXQ_tzZcNOTE",{auth:{persistSession:true,autoRefreshToken:true}});
 const QUIZ_ID="gaoyutong-grade6-english-"+DATA.slug+"-2026-v1",STORE="gao-english-"+DATA.slug+"-2026-v1",CHILD="高语桐";
 const $=id=>document.getElementById(id),MODES=[["verbs","动词双向默写"],["reading","词汇词组认读"],["sentences","重点句子默写"],["grammar","语法与情境填空"]];
@@ -98,8 +98,8 @@ function card(q,i,rec){
 function updateProgress(){const rec=getSession(),all=eligible(),todo=shown(),typed=all.filter(q=>String(rec.answers[q.id]||"").trim()).length;
  $("progress").textContent='当前轮需做 '+all.length+' 题｜已填写 '+typed+' 题｜显示 '+todo.length+' 题';
  const ready=method==="paper"?rec.written:all.length>0&&typed===all.length;
- $("gradeBtn").disabled=$("gradeBottom").disabled=rec.completed||(!rec.graded&&!ready);
- $("gradeBtn").textContent=$("gradeBottom").textContent=rec.graded?(viewAnswers?"已显示参考答案":"查看已批改答案"):"批改并显示答案";
+ $("gradeBtn").disabled=$("gradeBottom").disabled=!rec.graded&&!ready;
+ $("gradeBtn").textContent=$("gradeBottom").textContent=rec.graded?(viewAnswers?"已显示参考答案":"查看本轮已批改答案"):"批改并显示答案";
  $("finishBtn").disabled=$("finishBottom").disabled=!rec.graded||rec.completed;
 }
 function render(){
@@ -119,7 +119,7 @@ function render(){
 function refreshVisibleAnswers(){const rec=getSession();const set=shown();$("questionGrid").innerHTML=set.map((q,i)=>card(q,i,rec)).join("");$("empty").classList.toggle("hidden",set.length>0);updateProgress()}
 function grade(){
  const rec=getSession(),all=eligible();if(!all.length)return;
- if(rec.completed){$("guide").textContent="本轮已经完成。为了保护历史，不覆盖已保存的记录。";return}
+ if(rec.completed){viewAnswers=true;refreshVisibleAnswers();$("guide").textContent="仅查看已保存的历史参考答案，不会重新批改或覆盖旧成绩。";return}
  if(rec.graded){viewAnswers=true;refreshVisibleAnswers();return}
  if(method==="paper"&&!rec.written){$("guide").textContent="请先勾选「我已在纸上独立写完本轮全部题目」。";return}
  if(method==="typing"&&all.some(q=>!String(rec.answers[q.id]||"").trim())){$("guide").textContent="请先填完当前轮所有题目，再批改。";return}
@@ -155,7 +155,7 @@ async function checkAccess(){await ensureAuth();const r=await supabase.from("fam
 async function unlock(){
  if(cloudBusy)return;const passphrase=$("secret").value.trim();
  if(!passphrase){status("请输入家庭暗号。暗号不保存在网页或本机。","warn");return}
- cloudBusy=true;try{await ensureAuth();const r=await supabase.functions.invoke("unlock-family",{body:{passphrase}});if(r.error)throw r.error;if(!r.data||r.data.ok!==true)throw Error(r.data?.error||"家庭暗号不正确");$("secret").value="";cloudUnlocked=true;status("家庭档案解锁成功","success");await syncCloud()}catch(e){status("解锁失败："+(e.message||String(e)),"error")}finally{cloudBusy=false}
+ cloudBusy=true;let success=false;try{await ensureAuth();const r=await supabase.functions.invoke("unlock-family",{body:{passphrase}});if(r.error)throw r.error;if(!r.data||r.data.ok!==true)throw Error(r.data?.error||"家庭暗号不正确");$("secret").value="";cloudUnlocked=true;success=true;status("家庭档案解锁成功","success")}catch(e){status("解锁失败："+(e.message||String(e)),"error")}finally{cloudBusy=false}if(success)await syncCloud();
 }
 async function syncCloud(){
  if(cloudBusy||!cloudUnlocked)return;
@@ -222,7 +222,7 @@ function init(){
  const counts=buildQuestions("verbs").length+"道动词双向默写 · "+DATA.reading.length+"条词汇词组认读 · "+DATA.sentences.length+"句默写 · "+DATA.grammar.length+"道语法应用";
  $("counts").innerHTML='<span class="chip">'+counts+'</span><span class="chip">三次核对／每题独立记录</span><span class="chip">只做待巩固</span>';
  $("modeTabs").addEventListener("click",e=>{const b=e.target.closest("[data-mode]");if(!b)return;mode=b.dataset.mode;round=1;render()});
- document.querySelector(".rounds").addEventListener("click",e=>{const b=e.target.closest("[data-round]");if(!b)return;round=Number(b.dataset.round);render()});
+ document.querySelector(".rounds").addEventListener("click",e=>{const b=e.target.closest("[data-round]");if(!b)return;const next=Number(b.dataset.round);if(next>1&&!["typing","paper"].some(m=>state.sessions[[stage,mode,next-1,m].join("|")]?.completed)){$("guide").textContent="请先完成上一轮核对，再进入下一轮。";return}round=next;render()});
  $("stage").addEventListener("change",e=>{stage=e.target.value;round=1;render()});
  $("method").addEventListener("change",e=>{method=e.target.value;render()});
  $("pendingOnly").addEventListener("change",e=>{pendingOnly=!!e.target.checked;render()});
