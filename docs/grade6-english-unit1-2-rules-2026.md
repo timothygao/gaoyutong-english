@@ -9,6 +9,13 @@
 - 题目示例中的答案只能在完成本轮全部作答并点击批改之后显示。已批改答案在核对后可再次查看；纸笔模式先确认整轮写完，才可显示答案。
 - **历史保护：** 新的练习分类标识为 `past-only` / `dictation`，保留旧版 `verbs` / `reading` 的本机存储及云端历史记录。原有的 `QUIZ_ID` 和 `STORE` 不改；云端恢复仍兼容旧分类，但不把旧版英文选中文成绩视作新版中文默写英文。
 
+## Unit 1 + Unit 2 合卷（2026-11-09）
+- 将已有 Unit 1（62题）和 Unit 2（74题）的全部题目组合成**一张136题完整试卷**：动词过去式21题、中文默写英文词汇词组64题、句子19题、语法情境32题。以“类型→单元”分区呈现；不需要在两个单元页面切换。
+- 新卷 GitHub 源文件：`papers/grade6/unit1-unit2-combined-cloud.html`；在线镜像：`gaoyutong-grade6-science/english/unit1-unit2-combined.html`。
+- 合卷整体执行三轮复习：第一轮覆盖全部136题；第二、第三轮复习上轮尚未掌握的题目；保留单题的三轮勾选、纸笔／网页作答、完整作答后批改、错题榜和家庭 Supabase 同步。
+- 新卷采用独立 `quiz_id=gaoyutong-grade6-english-unit1-unit2-combined-2026-v1`、`localStorage=gao-english-unit1-unit2-combined-2026-v1`。旧 Unit1/Unit2 试卷、云端历史、当地浏览器草稿均保留，但不会混入新卷的学习轮次或误作为新成绩。
+- 已批改的轮次切走再切回保持答案可见，未批改轮次答案隐藏；真实完成并确认核对后才会提交云端成绩。
+
 ## 交互与成绩保护
 1. 每单元分别设 `quiz_id=gaoyutong-grade6-english-unit1-amazing-places-2026-v1` 与 `quiz_id=gaoyutong-grade6-english-unit2-getting-together-2026-v1`，本机键分别为 `gao-english-unit1-amazing-places-2026-v1` / `gao-english-unit2-getting-together-2026-v1`，不可覆盖已生成的其他试卷记录。
 2. 每个练习分类分预习、日常复习、期末复习；每阶段三轮。第2/3轮仅收录前面已完成轮次未掌握题目。每题显示第1/2/3次勾选；自动核对题可手工更正；纸笔默写要先确认写完才能显示答案。
